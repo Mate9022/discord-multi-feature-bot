@@ -1,0 +1,93 @@
+{
+  "token": "YOUR_DISCORD_BOT_TOKEN_HERE",
+  "prefix": "!otlet",
+  "guildId": "YOUR_GUILD_ID_HERE",
+  "autoJoinRole": "YOUR_AUTO_JOIN_ROLE_ID_HERE",
+  "ticket": {
+    "channelId": "YOUR_TICKET_CHANNEL_ID_HERE",
+    "categoryId": "YOUR_TICKET_CATEGORY_ID_HERE",
+    "categories": [
+      {"label": "🛠️ Technikai támogatás", "value": "technical", "description": "Technikai problémák és hibák"},
+      {"label": "💰 Számlázás", "value": "billing", "description": "Fizetési és számlázási kérdések"},
+      {"label": "💡 Visszajelzés", "value": "feedback", "description": "Javaslatok és visszajelzések"},
+      {"label": "❓ Általános kérdés", "value": "general", "description": "Egyéb kérdések és segítség"},
+      {"label": "🚫 Jelentés", "value": "report", "description": "Szabálysértések jelentése"}
+    ],
+    "embed": {
+      "title": "🎫 Ticket Rendszer",
+      "description": "Válassz egy kategóriát az alábbi menüből, hogy új ticket-et nyiss. A csapatunk hamarosan válaszol!",
+      "color": "#0099FF",
+      "footer": "Kattints a lenti menüre a ticket megnyitásához"
+    },
+    "ticketEmbed": {
+      "title": "🎫 Ticket létrehozva",
+      "color": "#00FF00",
+      "footer": "A ticket bezárásához kattints a piros gombra"
+    },
+    "closeButton": {
+      "label": "🗑️ Ticket bezárása",
+      "style": "Danger"
+    }
+  },
+  "ideaSubmission": {
+    "channelId": "YOUR_IDEA_CHANNEL_ID_HERE",
+    "embed": {
+      "title": "💡 Új Ötlet",
+      "color": "#FF9900",
+      "footer": "Szavazz az ötletre a reakciókkal!"
+    },
+    "reactions": ["✅", "❌"],
+    "confirmMessage": "✅ Az ötleted sikeresen elküldve!"
+  },
+  "minecraft": {
+    "enabled": true,
+    "host": "your-minecraft-server.com",
+    "port": 25565,
+    "statusInterval": 60000,
+    "statusMessages": {
+      "online": "🟢 {players} játékos online",
+      "offline": "🔴 Szerver offline",
+      "error": "⚠️ Szerver ellenőrzés sikertelen"
+    }
+  },
+  "rankAssignment": {
+    "roles": {
+      "VIP": "YOUR_VIP_ROLE_ID_HERE",
+      "Premium": "YOUR_PREMIUM_ROLE_ID_HERE",
+      "Member": "YOUR_MEMBER_ROLE_ID_HERE",
+      "Moderator": "YOUR_MODERATOR_ROLE_ID_HERE",
+      "Helper": "YOUR_HELPER_ROLE_ID_HERE"
+    },
+    "webhook": {
+      "enabled": false,
+      "url": "YOUR_WEBHOOK_URL_HERE",
+      "secret": "YOUR_WEBHOOK_SECRET_HERE"
+    },
+    "messages": {
+      "success": "✅ Sikeresen megkaptad a(z) **{rank}** rangot!",
+      "notFound": "❌ A(z) **{rank}** rang nem található!",
+      "error": "⚠️ Hiba történt a rang kiosztása során.",
+      "noPermission": "❌ Nincs jogosultságod ehhez a ranghoz!"
+    }
+  },
+  "messages": {
+    "welcome": "👋 Üdvözlünk a szerveren, {user}! Automatikusan megkaptad az alapértelmezett rangot.",
+    "errors": {
+      "missingPermissions": "❌ Nincs megfelelő jogosultságom ehhez a művelethez.",
+      "channelNotFound": "❌ A megadott csatorna nem található.",
+      "roleNotFound": "❌ A megadott rang nem található.",
+      "generalError": "⚠️ Váratlan hiba történt. Kérlek próbáld újra később."
+    }
+  },
+  "logging": {
+    "enabled": true,
+    "channelId": "YOUR_LOG_CHANNEL_ID_HERE",
+    "events": {
+      "memberJoin": true,
+      "ticketCreate": true,
+      "ticketClose": true,
+      "ideaSubmit": true,
+      "rankAssign": true
+    }
+  }
+}
