@@ -1,0 +1,17 @@
+{
+  "name": "discord-multifeature-bot",
+  "version": "1.0.0",
+  "description": "A Discord bot with auto join role, ticket system, idea submission, Minecraft status monitor, and rank assignment.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "node index.js"
+  },
+  "dependencies": {
+    "discord.js": "^14.14.1",
+    "minecraft-server-util": "^5.4.3"
+  },
+  "keywords": ["discord", "bot", "ticket", "minecraft", "moderation"],
+  "author": "Discord Bot Developer",
+  "license": "MIT"
+}
